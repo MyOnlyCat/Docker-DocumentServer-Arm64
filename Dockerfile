@@ -1,4 +1,4 @@
-FROM debian:latest
+FROM arm64v8/debian:9-slim
 LABEL maintainer="jiriks74"
 
 RUN echo "deb http://deb.debian.org/debian bullseye main contrib non-free\ndeb http://deb.debian.org/debian-security/ bullseye-security main contrib non-free\ndeb http://deb.debian.org/debian bullseye-updates main contrib non-free\ndeb http://deb.debian.org/debian bullseye-backports main" > /etc/apt/sources.list 
